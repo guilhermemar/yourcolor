@@ -29,6 +29,7 @@ h1 {
 div.color {
 	margin-top:40px;
 	text-align: center;
+	text-transform: capitalize;
 	font-size:45px;
 	font-weight: bold;
 	color: #e2e2e2;
@@ -64,4 +65,22 @@ body.green {
 
 body.green div.color {
 	color: #00ff00;
+}
+
+.share {
+	margin-top:55px;
+	text-align:center;
+}
+
+.share-facebook {
+	display:inline-block;
+	margin-right: 35px;
+}
+
+.share-twitter {
+	display:inline-block;
+}
+
+.share-googleplus {
+	display:inline-block;
 }
