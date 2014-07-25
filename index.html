@@ -4,6 +4,16 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 		
+		<meta name="description" content="Discover your color.">
+		<meta itemprop="image" content="http://guilhermemar.github.io/yourcolor/img/logo.jpg">
+		
+		<meta property="og:title" content="Your color">
+		<meta property="og:description" content="Discover your color.">
+		<meta property="og:image" content="http://guilhermemar.github.io/yourcolor/img/logo.jpg">
+		<meta property="og:image:type" content="image/jpeg">
+		<meta property="og:image:width" content="600">
+		<meta property="og:image:height" content="600">
+		
 		<title>Your color</title>
 		
 		<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -12,6 +22,34 @@
 		<h1>Your color is:</h1>
 		<div id="color" class="color">loading...</div>
 		
+
+		<div class="share">
+			<div class="share-facebook"><div class="fb-like" data-href="http://guilhermemar.github.io/yourcolor" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div></div>
+			<div class="share-twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://guilhermemar.github.io/yourcolor" data-text="Discover your color" data-hashtags="yourcolor">Tweet</a></div>
+			<div class="share-googleplus"><div class="g-plusone" data-size="medium" data-annotation="none" data-href="http://guilhermemar.github.io/yourcolor"></div></div>
+		</div>
+		
+		
 		<script src="js/context.js"></script>
+		
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=216485835130133&version=v2.0";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+		</script>
+		
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+		
+		<script type="text/javascript">
+		  (function() {
+		    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+		    po.src = 'https://apis.google.com/js/platform.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+		  })();
+		</script>
 	</body>
 </html>
