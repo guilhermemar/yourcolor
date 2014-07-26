@@ -14,9 +14,13 @@ html, body {
 
 body{
 	background-color: #ffffff;
+	background-image: url(../img/background.png);
+	text-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.degrade {
+	height: 50px;
 	background-image: linear-gradient(to bottom,  #e2e2e2, transparent);
-	background-size: 100% 50px;
-	background-repeat: no-repeat;
 }
 
 h1 {
@@ -35,7 +39,7 @@ div.color {
 	color: #e2e2e2;
 }
 
-body.blue {
+body.blue .degrade {
 	background-image: linear-gradient(to bottom,  #0000ff, transparent);
 }
 
@@ -43,38 +47,39 @@ body.blue div.color {
 	color: #0000ff;
 }
 
-body.red {
-	background-image: linear-gradient(to bottom,  #ff0000, transparent);
+body.red  .degrade {
+	background-image: linear-gradient(to bottom,  #D3201D, transparent);
 }
 
 body.red div.color {
-	color: #ff0000;
+	color: #D3201D;
 }
 
-body.yellow {
-	background-image: linear-gradient(to bottom,  #ffff00, transparent);
+body.yellow  .degrade {
+	background-image: linear-gradient(to bottom,  #FFEA03, transparent);
 }
 
 body.yellow div.color {
-	color: #ffff00;
+	color: #FFEA03;
 }
 
-body.green {
-	background-image: linear-gradient(to bottom,  #00ff00, transparent);
+body.green  .degrade {
+	background-image: linear-gradient(to bottom,  #008E00, transparent);
 }
 
 body.green div.color {
-	color: #00ff00;
+	color: #008E00;
 }
 
 .share {
 	margin-top:55px;
-	text-align:center;
+	text-align: center;
 }
 
 .share-facebook {
 	display:inline-block;
 	margin-right: 35px;
+	line-height: 11px;
 }
 
 .share-twitter {

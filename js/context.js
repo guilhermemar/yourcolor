@@ -5,7 +5,9 @@ var _colors = ['blue', 'red', 'yellow', 'green'];
 function saveColor (color) {
 	
 	var d = new Date();
-	d.setTime(d.getTime() + (9999*24*60*60*1000));
+	d.setUTCHours(23, 59, 59);
+	
+	//d.setTime(d.getTime() + (9999*24*60*60*1000));
 
 	document.cookie = _cookieName + "=" + _myColor + "; expires=" + d.toGMTString();
 }
